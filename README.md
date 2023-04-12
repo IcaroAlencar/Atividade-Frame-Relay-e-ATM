@@ -38,7 +38,7 @@ configure terminal
 int Serial1/0
 ip address 10.0.0.1 255.255.255.0
 encapsulation frame-relay
-frame-relay intf-typ dte
+frame-relay intf-type dte
 frame-relay map ip 10.0.0.2 101 broadcast
 no shut
 end
@@ -58,7 +58,7 @@ configure terminal
 int Serial1/0
 ip address 10.0.0.2 255.255.255.0
 encapsulation frame-relay
-frame-relay intf-typ dte
+frame-relay intf-type dte
 frame-relay map ip 10.0.0.1 101 broadcast
 no shut
 end
@@ -180,6 +180,7 @@ encapsulation frame-relay
 frame-relay intf-type dte
 frame-relay map ip 10.0.0.2 101 broadcast
 frame-relay map ip 10.0.0.1 102 broadcast
+no shut
 end
 ```
 
